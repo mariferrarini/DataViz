@@ -34,6 +34,56 @@
       a {
         color: #3075bb;
       }
+      .chart {
+        --series-1: #2a78d6;
+        --text-secondary: #52514e;
+        --axis: #d6d5d0;
+        margin: 24px 0 0;
+      }
+      .chart figcaption {
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .chart svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .chart .bar {
+        fill: var(--series-1);
+      }
+      .chart .hit {
+        fill: transparent;
+      }
+      .chart .hit:hover {
+        fill: rgba(22, 35, 63, 0.05);
+      }
+      .chart .baseline {
+        stroke: var(--axis);
+      }
+      .chart text {
+        font-size: 13px;
+        text-anchor: middle;
+      }
+      .chart .value {
+        fill: #16233f;
+      }
+      .chart .label {
+        fill: var(--text-secondary);
+      }
+      .chart details {
+        margin-top: 8px;
+        font-size: 14px;
+      }
+      .chart table {
+        border-collapse: collapse;
+        margin-top: 8px;
+      }
+      .chart th,
+      .chart td {
+        padding: 2px 12px 2px 0;
+        text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -42,6 +92,62 @@
       <p>Max Planck Institute for Chemical Ecology, Jena</p>
       <p>Department of Insect Symbiosis, Symbiotic systems biology group</p>
       <p>This website is under construction.</p>
+      <figure class="chart">
+        <figcaption>Value by name</figcaption>
+        <svg id="barchart" viewBox="0 0 560 240" role="img" aria-label="Bar chart of value by name"></svg>
+        <details>
+          <summary>Show data table</summary>
+          <table id="barchart-table">
+            <thead><tr><th>Name</th><th>Value</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </details>
+      </figure>
     </main>
+    <script>
+      const data = [
+        { name: "A", value: 1 },
+        { name: "B", value: 5 },
+        { name: "C", value: 8 },
+        { name: "D", value: 10 }
+      ];
+
+      const svg = document.getElementById("barchart");
+      const NS = "http://www.w3.org/2000/svg";
+      const W = 560, H = 240, padTop = 24, bottom = 28;
+      const plotH = H - padTop - bottom;
+      const band = W / data.length;
+      const barW = 24, r = 4;
+      const max = Math.max(...data.map((d) => d.value));
+
+      function el(tag, attrs, text) {
+        const n = document.createElementNS(NS, tag);
+        for (const k in attrs) n.setAttribute(k, attrs[k]);
+        if (text != null) n.textContent = text;
+        svg.appendChild(n);
+        return n;
+      }
+
+      el("line", { x1: 0, x2: W, y1: H - bottom, y2: H - bottom, class: "baseline" });
+
+      data.forEach((d, i) => {
+        const h = (d.value / max) * plotH;
+        const x = i * band + (band - barW) / 2;
+        const y = H - bottom - h;
+        // Column with a 4px rounded top, square at the baseline
+        el("path", {
+          class: "bar",
+          d: `M${x},${H - bottom}V${y + r}Q${x},${y} ${x + r},${y}H${x + barW - r}Q${x + barW},${y} ${x + barW},${y + r}V${H - bottom}Z`,
+        });
+        el("text", { x: x + barW / 2, y: y - 6, class: "value" }, d.value);
+        el("text", { x: x + barW / 2, y: H - 8, class: "label" }, d.name);
+        // Full-height hover target with a native tooltip
+        const hit = el("rect", { x: i * band, y: 0, width: band, height: H - bottom, class: "hit" });
+        hit.appendChild(document.createElementNS(NS, "title")).textContent = `${d.name}: ${d.value}`;
+      });
+
+      const tbody = document.querySelector("#barchart-table tbody");
+      data.forEach((d) => tbody.insertAdjacentHTML("beforeend", `<tr><td>${d.name}</td><td>${d.value}</td></tr>`));
+    </script>
   </body>
 </html>
