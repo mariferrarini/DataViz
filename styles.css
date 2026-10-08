@@ -1,0 +1,316 @@
+/* ---------- Fonts (self-hosted, SIL Open Font License: see fonts/LICENSES) ---------- */
+/* Fraunces, latin-ext */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/fraunces-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Fraunces, latin */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/fraunces-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* IBM Plex Mono, latin-ext */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* IBM Plex Mono, latin */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* IBM Plex Sans, latin-ext */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("fonts/ibm-plex-sans-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* IBM Plex Sans, latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("fonts/ibm-plex-sans-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---------- Palette: navy with blue-grey hues ---------- */
+:root {
+  --navy: #1f3a70;
+  --navy-light: #2f4f7f;
+  --text: #1b2a41;
+  --text-muted: #5a6a80;
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --border: #d9e0e8;
+  --viz-ink-rgb: 27, 47, 78; /* deep navy as "r, g, b", for the canvas animation */
+  --viz-ink-2-rgb: 110, 135, 170; /* blue-grey, the animation's second layer */
+  --viz-ink-3-rgb: 58, 110, 180; /* brighter blue, the protein's second motif */
+
+  --max-w: 960px;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+  /* Fraunces for the name and headings, IBM Plex Sans for text, IBM Plex Mono for the terminal touches */
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 var(--font-body);
+}
+h1,
+h2 {
+  font-family: var(--font-heading);
+  color: var(--navy);
+  font-weight: 600;
+  line-height: 1.2;
+}
+a {
+  color: var(--navy-light);
+}
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 112px 16px 64px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- Top banner ---------- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 18px 16px;
+  background: rgba(245, 247, 250, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wordmark {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--navy);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--navy);
+}
+
+/* ---------- Card ---------- */
+.card {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 36px 32px 32px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow:
+    0 12px 32px rgba(27, 47, 78, 0.1),
+    0 2px 6px rgba(27, 47, 78, 0.06);
+}
+.card h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+}
+.card p {
+  margin: 0 0 4px;
+  color: var(--text-muted);
+}
+
+/* Round icon buttons */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+.contact-icons a:hover {
+  color: var(--navy);
+  border-color: var(--navy);
+  transform: translateY(-3px);
+}
+.contact-icons a:focus-visible {
+  outline: 2px solid var(--navy-light);
+  outline-offset: 2px;
+}
+.contact-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ---------- Typewriter + animation ---------- */
+.tagline {
+  margin: 40px auto 8px;
+  min-height: 3.2em;
+  text-align: center;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 15px;
+}
+/* Terminal-style block cursor */
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.15em;
+  margin-left: 2px;
+  vertical-align: -0.2em;
+  background: var(--text-muted);
+  animation: blink 1s step-end infinite;
+}
+.cursor.done {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.stage {
+  position: relative;
+  height: 280px;
+  /* Wider than the text column, so the four figures fit side by side */
+  width: min(1200px, calc(100vw - 32px));
+  left: 50%;
+  transform: translateX(-50%);
+}
+#stage-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+/* 3D protein viewer, placed by story.js under the canvas */
+.stage .structure {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- Projects ---------- */
+.page-title {
+  font-size: 36px;
+  margin: 0 0 8px;
+}
+.page-intro {
+  margin: 0 0 32px;
+  color: var(--text-muted);
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  min-height: 180px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 20px;
+  }
+  .card {
+    padding: 28px 20px 24px;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+  .contact-icons a:hover {
+    transform: none;
+  }
+}
