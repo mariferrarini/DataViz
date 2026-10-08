@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mariana Galvão Ferrarini</title>
+    <title>Mariana Ferrarini</title>
     <meta name="robots" content="noindex" />
     <style>
       body {
@@ -20,7 +20,8 @@
         padding: 0 16px;
       }
       main {
-        max-width: 560px;
+        width: 100%;
+        max-width: 960px;
       }
       h1 {
         font:
@@ -34,120 +35,502 @@
       a {
         color: #3075bb;
       }
-      .chart {
-        --series-1: #2a78d6;
-        --text-secondary: #52514e;
-        --axis: #d6d5d0;
-        margin: 24px 0 0;
+      .card {
+        max-width: 560px;
+        padding: 24px 28px;
+        border: 1px solid #e6e4df;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(22, 35, 63, 0.06);
       }
-      .chart figcaption {
-        font-weight: 600;
-        margin-bottom: 8px;
+      .card p {
+        margin: 0 0 6px;
       }
-      .chart svg {
-        display: block;
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        border: 1px solid #d6d5d0;
+        border-radius: 6px;
+        color: #16233f;
+        font-size: 15px;
+        text-decoration: none;
+        transition: border-color 0.15s;
+      }
+      .button:hover {
+        border-color: #16233f;
+      }
+      .button:focus-visible {
+        outline: 2px solid #3075bb;
+        outline-offset: 2px;
+      }
+      .button svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
+      @media (max-width: 480px) {
+        .card {
+          padding: 20px;
+        }
+      }
+      .tagline {
+        margin: 28px 0 8px;
+        min-height: 3.2em;
+        color: #52514e;
+      }
+      .cursor {
+        display: inline-block;
+        margin-left: 1px;
+        font-weight: 300;
+        animation: blink 0.75s step-end infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      .cursor.done {
+        animation: none;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+      .stage {
+        position: relative;
+        height: 280px;
+      }
+      .stage canvas {
+        position: absolute;
+        inset: 0;
         width: 100%;
-        height: auto;
+        height: 100%;
       }
-      .chart .bar {
-        fill: var(--series-1);
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
       }
-      .chart .hit {
-        fill: transparent;
-      }
-      .chart .hit:hover {
-        fill: rgba(22, 35, 63, 0.05);
-      }
-      .chart .baseline {
-        stroke: var(--axis);
-      }
-      .chart text {
-        font-size: 13px;
-        text-anchor: middle;
-      }
-      .chart .value {
-        fill: #16233f;
-      }
-      .chart .label {
-        fill: var(--text-secondary);
-      }
-      .chart details {
-        margin-top: 8px;
-        font-size: 14px;
-      }
-      .chart table {
-        border-collapse: collapse;
-        margin-top: 8px;
-      }
-      .chart th,
-      .chart td {
-        padding: 2px 12px 2px 0;
-        text-align: left;
+      @media (prefers-reduced-motion: reduce) {
+        .cursor {
+          animation: none;
+        }
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Mariana Galvão Ferrarini</h1>
-      <p>Max Planck Institute for Chemical Ecology, Jena</p>
-      <p>Department of Insect Symbiosis, Symbiotic systems biology group</p>
-      <p>This website is under construction.</p>
-      <figure class="chart">
-        <figcaption>Value by name</figcaption>
-        <svg id="barchart" viewBox="0 0 560 240" role="img" aria-label="Bar chart of value by name"></svg>
-        <details>
-          <summary>Show data table</summary>
-          <table id="barchart-table">
-            <thead><tr><th>Name</th><th>Value</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </details>
-      </figure>
+      <section class="card">
+        <h1>Mariana Ferrarini</h1>
+        <p>Max Planck Institute for Chemical Ecology, Jena</p>
+        <p>Department of Insect Symbiosis, Symbiotic systems biology group</p>
+        <div class="links">
+          <a class="button" href="https://www.linkedin.com/in/marianaferrarini/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+              />
+            </svg>
+            LinkedIn
+          </a>
+          <a class="button" href="https://github.com/mariferrarini" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.57v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </section>
+      <p class="tagline">
+        <span id="typewriter" aria-hidden="true"></span><span class="cursor" aria-hidden="true">|</span>
+        <span class="sr-only" id="tagline-text"></span>
+      </p>
+      <div class="stage" aria-hidden="true"><canvas id="stage-canvas"></canvas></div>
     </main>
     <script>
-      const data = [
-        { name: "A", value: 1 },
-        { name: "B", value: 5 },
-        { name: "C", value: 8 },
-        { name: "D", value: 10 }
-      ];
+      // One story, told once: a network sorts itself into modules (arcs), the same network
+      // is shown as an adjacency matrix that sorts into blocks, then a zoom into one module
+      // reveals its members' sequences, which align around a shared motif. Then it all stops.
+      (function () {
+        const INK = "22, 35, 63"; // #16233f
+        const AXIS = "#d6d5d0";
 
-      const svg = document.getElementById("barchart");
-      const NS = "http://www.w3.org/2000/svg";
-      const W = 560, H = 240, padTop = 24, bottom = 28;
-      const plotH = H - padTop - bottom;
-      const band = W / data.length;
-      const barW = 24, r = 4;
-      const max = Math.max(...data.map((d) => d.value));
+        // ---------- Seeded randomness ----------
+        function rng(seed) {
+          return function () {
+            seed |= 0;
+            seed = (seed + 0x6d2b79f5) | 0;
+            let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+            t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+            return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+          };
+        }
+        function shuffle(a, r = Math.random) {
+          for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(r() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+          }
+          return a;
+        }
 
-      function el(tag, attrs, text) {
-        const n = document.createElementNS(NS, tag);
-        for (const k in attrs) n.setAttribute(k, attrs[k]);
-        if (text != null) n.textContent = text;
-        svg.appendChild(n);
-        return n;
-      }
+        // ---------- Network: 8 planted modules ----------
+        const rand = rng(1);
+        const SIZES = [12, 9, 8, 7, 6, 5, 5, 4];
+        const N = SIZES.reduce((a, b) => a + b, 0);
+        const planted = SIZES.flatMap((s, g) => Array(s).fill(g));
+        const edges = [];
+        for (let i = 0; i < N; i++)
+          for (let j = i + 1; j < N; j++) if (rand() < (planted[i] === planted[j] ? 0.6 : 0.015)) edges.push([i, j]);
+        const neighbors = Array.from({ length: N }, () => []);
+        for (const [i, j] of edges) {
+          neighbors[i].push(j);
+          neighbors[j].push(i);
+        }
+        const degree = neighbors.map((n) => n.length);
 
-      el("line", { x1: 0, x2: W, y1: H - bottom, y2: H - bottom, class: "baseline" });
+        // ---------- Community detection: Louvain (doesn't see the planted modules) ----------
+        // Moves nodes between communities while modularity improves, then merges each
+        // community into one weighted node and repeats until nothing moves.
+        function louvain(r) {
+          const m2 = 2 * edges.length;
+          let n = N;
+          let adj = neighbors.map((nb) => new Map(nb.map((u) => [u, 1])));
+          let member = [...Array(N).keys()]; // original node → current merged node
+          for (;;) {
+            const k = adj.map((a, v) => [...a].reduce((s, [u, w]) => s + (u === v ? 2 * w : w), 0));
+            const com = [...Array(n).keys()];
+            const tot = k.slice();
+            let moved = false;
+            for (let improved = true; improved; ) {
+              improved = false;
+              for (const v of shuffle([...Array(n).keys()], r)) {
+                const cv = com[v];
+                const links = new Map();
+                for (const [u, w] of adj[v]) if (u !== v) links.set(com[u], (links.get(com[u]) || 0) + w);
+                tot[cv] -= k[v];
+                let best = cv;
+                let bestGain = (links.get(cv) || 0) - (tot[cv] * k[v]) / m2;
+                for (const [c, w] of links) {
+                  const gain = w - (tot[c] * k[v]) / m2;
+                  if (gain > bestGain + 1e-12) [best, bestGain] = [c, gain];
+                }
+                tot[best] += k[v];
+                if (best !== cv) {
+                  com[v] = best;
+                  improved = moved = true;
+                }
+              }
+            }
+            if (!moved) break;
+            const ids = new Map();
+            for (const c of com) if (!ids.has(c)) ids.set(c, ids.size);
+            const next = Array.from({ length: ids.size }, () => new Map());
+            for (let v = 0; v < n; v++)
+              for (const [u, w] of adj[v]) {
+                const a = ids.get(com[v]);
+                const b = ids.get(com[u]);
+                const add = u === v ? w : w / 2; // each edge is visited from both ends
+                next[a].set(b, (next[a].get(b) || 0) + add);
+                if (a !== b) next[b].set(a, (next[b].get(a) || 0) + add);
+              }
+            member = member.map((s) => ids.get(com[s]));
+            adj = next;
+            n = ids.size;
+          }
+          return member;
+        }
+        function modularity(com) {
+          const m = edges.length;
+          let q = edges.filter(([i, j]) => com[i] === com[j]).length / m;
+          const tot = new Map();
+          for (let v = 0; v < N; v++) tot.set(com[v], (tot.get(com[v]) || 0) + degree[v]);
+          for (const t of tot.values()) q -= (t / (2 * m)) ** 2;
+          return q;
+        }
+        function detectCommunities(r, runs = 10) {
+          let best = null;
+          let bestQ = -Infinity;
+          for (let i = 0; i < runs; i++) {
+            const c = louvain(r);
+            const q = modularity(c);
+            if (!best || q > bestQ) [best, bestQ] = [c, q];
+          }
+          // Renumber communities 0..k-1, largest first
+          const sizes = new Map();
+          for (const c of best) sizes.set(c, (sizes.get(c) || 0) + 1);
+          const rank = new Map([...sizes].sort((a, b) => b[1] - a[1]).map(([c], i) => [c, i]));
+          return best.map((c) => rank.get(c));
+        }
+        const community = detectCommunities(rng(11));
+        // Smallest community first, so the largest block ends at the matrix's bottom-right
+        // corner, right next to the zoom panel
+        const grouped = [...Array(N).keys()].sort(
+          (a, b) => community[b] - community[a] || degree[b] - degree[a] || a - b,
+        );
+        const zoomMembers = grouped.filter((v) => community[v] === 0);
 
-      data.forEach((d, i) => {
-        const h = (d.value / max) * plotH;
-        const x = i * band + (band - barW) / 2;
-        const y = H - bottom - h;
-        // Column with a 4px rounded top, square at the baseline
-        el("path", {
-          class: "bar",
-          d: `M${x},${H - bottom}V${y + r}Q${x},${y} ${x + r},${y}H${x + barW - r}Q${x + barW},${y} ${x + barW},${y + r}V${H - bottom}Z`,
+        // Position of each node (in slots) for a given order
+        function positions(order) {
+          const p = new Array(N);
+          order.forEach((v, r) => (p[v] = r));
+          return p;
+        }
+
+        // ---------- Sequences of the zoomed module, sharing a hidden motif ----------
+        const MOTIF = "AGGAGG"; // Shine-Dalgarno, the ribosome binding site
+        const SEQ_LEN = 18;
+        const seqRand = rng(5);
+        const seqs = zoomMembers.map(() => {
+          const B = "ACGT";
+          const at = Math.floor(seqRand() * (SEQ_LEN - MOTIF.length + 1));
+          const s = Array.from({ length: SEQ_LEN }, () => B[Math.floor(seqRand() * 4)]);
+          const motif = MOTIF.split("");
+          if (seqRand() < 0.35) motif[Math.floor(seqRand() * motif.length)] = B[Math.floor(seqRand() * 4)];
+          motif.forEach((c, k) => (s[at + k] = c));
+          return { s, at };
         });
-        el("text", { x: x + barW / 2, y: y - 6, class: "value" }, d.value);
-        el("text", { x: x + barW / 2, y: H - 8, class: "label" }, d.name);
-        // Full-height hover target with a native tooltip
-        const hit = el("rect", { x: i * band, y: 0, width: band, height: H - bottom, class: "hit" });
-        hit.appendChild(document.createElementNS(NS, "title")).textContent = `${d.name}: ${d.value}`;
-      });
+        const maxAt = Math.max(...seqs.map((q) => q.at));
 
-      const tbody = document.querySelector("#barchart-table tbody");
-      data.forEach((d) => tbody.insertAdjacentHTML("beforeend", `<tr><td>${d.name}</td><td>${d.value}</td></tr>`));
+        // ---------- Layout ----------
+        const stage = document.querySelector(".stage");
+        const canvas = document.getElementById("stage-canvas");
+        const ctx = canvas.getContext("2d");
+        let W, H, wide;
+        const P = {};
+
+        function layout() {
+          W = stage.clientWidth;
+          wide = W >= 720;
+          // Arcs on top, each node directly above its matrix column; the matrix below.
+          // Sequences sit beside the matrix on wide screens, below it on narrow ones.
+          const ms = wide ? Math.min(380, (W - 40) * 0.5) : Math.min(W, 340);
+          const arcH = Math.min(ms / 2, wide ? 160 : 140);
+          P.matrix = { x: wide ? 0 : (W - ms) / 2, y: arcH + 18, w: ms, h: ms };
+          P.seq = wide
+            ? { x: ms + 48, y: P.matrix.y, w: Math.min(420, W - ms - 48), h: ms }
+            : { x: 0, y: P.matrix.y + ms + 28, w: W, h: 250 };
+          P.arcBase = arcH + 8;
+          P.arcBaseStart = P.arcBase + ms * 0.4; // arcs start lower, then rise as the matrix appears
+          P.arcFlat = arcH / (ms / 2);
+          H = Math.max(P.matrix.y + ms, P.seq.y + P.seq.h) + 4;
+          stage.style.height = `${H}px`;
+          const dpr = window.devicePixelRatio || 1;
+          canvas.width = W * dpr;
+          canvas.height = H * dpr;
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        // ---------- Drawing ----------
+        const lerp = (a, b, t) => a + (b - a) * t;
+
+        // Arcs and matrix share one order, so every node keeps its matrix column
+        const shuffled = shuffle([...Array(N).keys()]);
+        const from = positions(shuffled);
+        const to = positions(grouped);
+
+        function drawArcs(e, move) {
+          const m = P.matrix;
+          const cell = m.w / N;
+          const base = lerp(P.arcBaseStart, P.arcBase, move);
+          const x = (v) => m.x + (lerp(from[v], to[v], e) + 0.5) * cell;
+          ctx.lineWidth = 1;
+          ctx.strokeStyle = `rgba(${INK},0.3)`;
+          ctx.beginPath();
+          for (const [i, j] of edges) {
+            const a = Math.min(x(i), x(j));
+            const r = (Math.max(x(i), x(j)) - a) / 2;
+            ctx.moveTo(a, base);
+            ctx.ellipse(a + r, base, r, r * P.arcFlat, 0, Math.PI, 2 * Math.PI);
+          }
+          ctx.stroke();
+          ctx.fillStyle = `rgb(${INK})`;
+          const dot = Math.min(2.5, cell * 0.4);
+          for (let v = 0; v < N; v++) {
+            ctx.beginPath();
+            ctx.arc(x(v), base, dot, 0, 2 * Math.PI);
+            ctx.fill();
+          }
+        }
+
+        function drawMatrix(r, e, alpha) {
+          const cell = r.w / N;
+          const pos = from.map((p, v) => lerp(p, to[v], e));
+          ctx.globalAlpha = alpha;
+          ctx.fillStyle = `rgba(${INK},0.85)`;
+          const put = (i, j) => ctx.fillRect(r.x + pos[i] * cell, r.y + pos[j] * cell, cell, cell);
+          for (let v = 0; v < N; v++) put(v, v);
+          for (const [i, j] of edges) {
+            put(i, j);
+            put(j, i);
+          }
+          ctx.strokeStyle = AXIS;
+          ctx.lineWidth = 1;
+          ctx.strokeRect(r.x + 0.5, r.y + 0.5, r.w - 1, r.h - 1);
+          ctx.globalAlpha = 1;
+        }
+
+        // Where the sequence text sits inside its area
+        function seqBox(r) {
+          const cols = maxAt + SEQ_LEN;
+          const cw = Math.min(11, (r.w - 20) / cols);
+          const rowH = Math.min(20, (r.h - 16) / seqs.length);
+          const x = r.x + (wide ? 0 : (r.w - cols * cw) / 2);
+          const y = r.y + (r.h - rowH * seqs.length) / 2;
+          return { cw, rowH, x, y, w: cols * cw, h: rowH * seqs.length };
+        }
+
+        // Frame the largest module's block and draw zoom lines out to its sequences
+        function drawZoom(z) {
+          const m = P.matrix;
+          const t = seqBox(P.seq);
+          const size = (zoomMembers.length / N) * m.w;
+          const b = { x: m.x + m.w - size, y: m.y + m.h - size, w: size, h: size };
+          ctx.strokeStyle = `rgba(${INK},${(0.8 * z).toFixed(3)})`;
+          ctx.lineWidth = 1.2;
+          ctx.strokeRect(b.x - 1.5, b.y - 1.5, b.w + 3, b.h + 3);
+          const lines = wide
+            ? [[b.x + b.w + 1.5, b.y - 1.5, t.x - 10, t.y], [b.x + b.w + 1.5, b.y + b.h + 1.5, t.x - 10, t.y + t.h]]
+            : [[b.x - 1.5, b.y + b.h + 1.5, t.x, t.y - 10], [b.x + b.w + 1.5, b.y + b.h + 1.5, t.x + t.w, t.y - 10]];
+          ctx.strokeStyle = `rgba(${INK},0.3)`;
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          for (const [x1, y1, x2, y2] of lines) {
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(lerp(x1, x2, z), lerp(y1, y2, z));
+          }
+          ctx.stroke();
+        }
+
+        function drawSequences(r, e, alpha) {
+          const { cw, rowH, x, y, h } = seqBox(r);
+          ctx.globalAlpha = alpha;
+          ctx.font = `${cw * 1.55}px ui-monospace, Menlo, monospace`;
+          ctx.textAlign = "center";
+          // Conserved column band, appearing as the rows fall into place
+          ctx.fillStyle = `rgba(${INK},${(0.06 * e * e).toFixed(3)})`;
+          ctx.fillRect(x + maxAt * cw - 2, y, MOTIF.length * cw + 4, h);
+          seqs.forEach((q, i) => {
+            const shift = (maxAt - q.at) * e;
+            q.s.forEach((c, k) => {
+              const inMotif = k >= q.at && k < q.at + MOTIF.length && c === MOTIF[k - q.at];
+              ctx.fillStyle = `rgba(${INK},${(inMotif ? 0.3 + 0.65 * e : 0.3).toFixed(3)})`;
+              ctx.fillText(c, x + (k + shift + 0.5) * cw, y + (i + 0.72) * rowH);
+            });
+          });
+          ctx.globalAlpha = 1;
+        }
+
+        // ---------- Timeline: text and visuals are both a function of time ----------
+        const PHRASES = [
+          "I like to find patterns in complex datasets.",
+          "I like to play with data visualization.",
+          "I'm passionate about sequences and the motifs they hide.",
+        ];
+        document.getElementById("tagline-text").textContent = PHRASES.join(" ");
+        const TYPE_MS = 55;
+        const DELETE_MS = 28;
+        const HOLD_MS = 2200;
+        // Keyframes: type 1 · hold · delete 1 · type 2 · hold · delete 2 · type 3 · hold · delete 3
+        const T = [0];
+        const add = (ms) => T.push(T[T.length - 1] + ms);
+        add(PHRASES[0].length * TYPE_MS);
+        add(HOLD_MS);
+        add(PHRASES[0].length * DELETE_MS);
+        add(PHRASES[1].length * TYPE_MS);
+        add(HOLD_MS);
+        add(PHRASES[1].length * DELETE_MS);
+        add(PHRASES[2].length * TYPE_MS);
+        add(HOLD_MS);
+        add(PHRASES[2].length * DELETE_MS);
+        const END = T[9];
+
+        const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+        // Eased progress through keyframes a → b, optionally only over fraction f0..f1 of it
+        function seg(t, a, b, f0 = 0, f1 = 1) {
+          const u = (t - T[a]) / (T[b] - T[a]);
+          return ease(Math.max(0, Math.min(1, (u - f0) / (f1 - f0))));
+        }
+
+        function textAt(t) {
+          const typed = (p, a) => PHRASES[p].slice(0, Math.floor((t - T[a]) / TYPE_MS));
+          const deleted = (p, a) => PHRASES[p].slice(0, Math.max(0, PHRASES[p].length - Math.floor((t - T[a]) / DELETE_MS)));
+          if (t < T[1]) return typed(0, 0);
+          if (t < T[2]) return PHRASES[0];
+          if (t < T[3]) return deleted(0, 2);
+          if (t < T[4]) return typed(1, 3);
+          if (t < T[5]) return PHRASES[1];
+          if (t < T[6]) return deleted(1, 5);
+          if (t < T[7]) return typed(2, 6);
+          if (t < T[8]) return PHRASES[2];
+          if (t < T[9]) return deleted(2, 8);
+          return "";
+        }
+
+        function draw(t) {
+          ctx.clearRect(0, 0, W, H);
+          // Arcs sort (1), scramble while moving aside (2→3); the matrix then fades in
+          // unordered and sorts itself, with the arcs re-sorting in step (3→4)
+          const matSort = seg(t, 3, 4, 0.25, 1);
+          const arcSort = t < T[2] ? seg(t, 0, 1) : t < T[3] ? 1 - seg(t, 2, 3) : matSort;
+          drawArcs(arcSort, seg(t, 2, 3));
+          const matAlpha = seg(t, 3, 4, 0, 0.25);
+          if (matAlpha > 0) drawMatrix(P.matrix, matSort, matAlpha);
+          const zoom = seg(t, 5, 6);
+          if (zoom > 0) {
+            drawZoom(zoom);
+            drawSequences(P.seq, seg(t, 6, 7), Math.max(0, (zoom - 0.4) / 0.6));
+          }
+        }
+
+        const typer = document.getElementById("typewriter");
+        const cursor = document.querySelector(".cursor");
+        let t0 = null;
+        let now = 0;
+        let shown = null;
+
+        function frame(ts) {
+          if (t0 === null) t0 = ts;
+          now = Math.min(END, ts - t0);
+          const text = textAt(now);
+          if (text !== shown) typer.textContent = shown = text;
+          draw(now);
+          if (now < END) requestAnimationFrame(frame);
+          else setTimeout(() => cursor.classList.add("done"), 1500); // and then it all stops
+        }
+
+        layout();
+        let resizeId;
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeId);
+          resizeId = setTimeout(() => {
+            layout();
+            draw(now);
+          }, 100);
+        });
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          // No typing or motion: show the finished picture
+          now = END;
+          cursor.classList.add("done");
+          draw(END);
+        } else {
+          draw(0);
+          setTimeout(() => requestAnimationFrame(frame), 800);
+        }
+      })();
+    </script>
+    <script>
+      console.log("Hello!");
     </script>
   </body>
 </html>
