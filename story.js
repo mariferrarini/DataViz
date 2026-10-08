@@ -514,25 +514,28 @@
   const TYPE_MS = 75;
   const DELETE_MS = 35;
   const HOLD_MS = 3200;
+  const BLANK_MS = 1000; // an empty line, just the cursor, before each new phrase
   // Keyframes: type 1 · hold · delete 1 · type 2 · hold · delete 2 · type 3 · hold · delete 3 ·
-  // type 4 · hold · delete 4
+  // type 4 · hold · delete 4. Phrases 2-4's typing keyframes start with the blank moment.
   const T = [0];
   const add = (ms) => T.push(T[T.length - 1] + ms);
   add(PHRASES[0].length * TYPE_MS);
   add(HOLD_MS);
   add(PHRASES[0].length * DELETE_MS);
-  add(PHRASES[1].length * TYPE_MS);
+  add(BLANK_MS + PHRASES[1].length * TYPE_MS);
   add(HOLD_MS);
   add(PHRASES[1].length * DELETE_MS);
-  add(PHRASES[2].length * TYPE_MS);
+  add(BLANK_MS + PHRASES[2].length * TYPE_MS);
   add(HOLD_MS);
   add(PHRASES[2].length * DELETE_MS);
-  add(PHRASES[3].length * TYPE_MS);
+  add(BLANK_MS + PHRASES[3].length * TYPE_MS);
   add(HOLD_MS);
   add(PHRASES[3].length * DELETE_MS);
   const END = T[12];
 
   const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+  // Fraction of typing keyframe a → a+1 taken by the blank moment before the phrase
+  const blank = (a) => BLANK_MS / (T[a + 1] - T[a]);
   // Eased progress through keyframes a → b, optionally only over fraction f0..f1 of it
   function seg(t, a, b, f0 = 0, f1 = 1) {
     const u = (t - T[a]) / (T[b] - T[a]);
@@ -540,7 +543,7 @@
   }
 
   function textAt(t) {
-    const typed = (p, a) => PHRASES[p].slice(0, Math.floor((t - T[a]) / TYPE_MS));
+    const typed = (p, a) => PHRASES[p].slice(0, Math.max(0, Math.floor((t - T[a] - (p > 0 ? BLANK_MS : 0)) / TYPE_MS)));
     const deleted = (p, a) => PHRASES[p].slice(0, Math.max(0, PHRASES[p].length - Math.floor((t - T[a]) / DELETE_MS)));
     if (t < T[1]) return typed(0, 0);
     if (t < T[2]) return PHRASES[0];
@@ -565,7 +568,7 @@
     const morphFrom = T[0] + 0.5 * (T[1] - T[0]); // the network holds still for the first half
     const morphTo = T[1] + 0.5 * (T[2] - T[1]);
     const morph = Math.max(0, Math.min(1, (t - morphFrom) / (morphTo - morphFrom)));
-    const order = t < T[2] ? 1 : t < T[3] ? 1 - seg(t, 2, 3) : seg(t, 3, 4, 0.1, 1);
+    const order = t < T[2] ? 1 : t < T[3] ? 1 - seg(t, 2, 3) : seg(t, 3, 4, blank(3) + 0.05, 1);
     const reveal = t < T[2] ? 0 : seg(t, 2, 3, 0.3, 1);
     if (morph < 1) drawNetwork(morph);
     else drawArcs(order, reveal);
@@ -573,13 +576,13 @@
     const zoom = seg(t, 5, 6);
     if (zoom > 0) {
       drawZoom(zoom);
-      drawSequences(P.seq, seg(t, 6, 7), Math.max(0, (zoom - 0.4) / 0.6), seg(t, 9, 10));
+      drawSequences(P.seq, seg(t, 6, 7, blank(6)), Math.max(0, (zoom - 0.4) / 0.6), seg(t, 9, 10, blank(9)));
     }
     // Zoom from the protein motif into the protein (8→9); its second motif then colours in,
     // in 3D and in the sequences at once (9→10)
     const zoom2 = seg(t, 8, 9);
     if (zoom2 > 0) drawZoom2(zoom2);
-    drawStructure(Math.max(0, (zoom2 - 0.4) / 0.6), seg(t, 9, 10));
+    drawStructure(Math.max(0, (zoom2 - 0.4) / 0.6), seg(t, 9, 10, blank(9)));
   }
 
   const typer = document.getElementById("typewriter");
