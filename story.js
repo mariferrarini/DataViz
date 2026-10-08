@@ -508,7 +508,7 @@
     "I like to find patterns in complex datasets.",
     "I like to play with data visualization.",
     "I'm passionate about sequences and the motifs they hide.",
-    "I love seeing how structure shapes function.",
+    "I love seeing how structure shapes activity.",
   ];
   document.getElementById("tagline-text").textContent = PHRASES.join(" ");
   const TYPE_MS = 75;
