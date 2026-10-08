@@ -203,7 +203,9 @@
     wide = W >= 880;
     if (wide) {
       // arcs | matrix | sequences | structure, every node level with its matrix row
-      const ms = Math.min(400, (W - 84) / 2.85);
+      // Fit the row in the window below the sentence, so nothing sits under the fold
+      const room = window.innerHeight - (stage.getBoundingClientRect().top + window.scrollY) - 24;
+      const ms = Math.max(200, Math.min(400, (W - 84) / 2.85, room - 8));
       const arcW = 0.5 * ms;
       const seqW = 0.6 * ms;
       const structW = 0.75 * ms;
@@ -212,6 +214,7 @@
       P.matrix = { x: left + arcW + 20, y: 4, w: ms, h: ms };
       P.seq = { x: P.matrix.x + ms + 32, y: 4, w: seqW, h: ms };
       P.struct = { x: P.seq.x + seqW + 32, y: 4, w: structW, h: ms };
+      P.net = { x: left, y: 4, w: arcW + 20 + ms, h: ms }; // the opening network, before the arcs
       P.arcFlat = (arcW / 2 - 6) / (ms / 2);
       H = ms + 8;
     } else {
@@ -223,6 +226,7 @@
       P.matrix = { x: (W - ms) / 2, y: P.axis + arcH + 18, w: ms, h: ms };
       P.seq = { x: 0, y: P.matrix.y + ms + 28, w: W, h: 450 };
       P.struct = { x: (W - sz) / 2, y: P.seq.y + P.seq.h + 28, w: sz, h: sz * 1.3 };
+      P.net = P.matrix; // the opening network sits where the matrix will appear
       P.arcFlat = arcH / (ms / 2);
       H = P.struct.y + P.struct.h + 4;
     }
@@ -244,6 +248,21 @@
   // ---------- Drawing ----------
   const lerp = (a, b, t) => a + (b - a) * t;
 
+  // ---------- Opening network: node positions from network-layout.js (Cytoscape.js JSON) ----------
+  // Normalised to a unit square, mapped to the network panel when drawn. Without the file the
+  // nodes sit on a circle.
+  const netPos = (() => {
+    const nodes = window.NETWORK_LAYOUT?.elements?.nodes || [];
+    // Cytoscape renumbers ids on export but keeps ours as id_original
+    const byId = new Map(nodes.map((n) => [n.data.id_original || n.data.id, n.position]));
+    const raw = [...Array(N).keys()].map((i) => byId.get(`n${i}`));
+    if (raw.some((p) => !p)) return raw.map((_, i) => [0.5 + 0.5 * Math.cos((2 * Math.PI * i) / N), 0.5 + 0.5 * Math.sin((2 * Math.PI * i) / N)]);
+    const xs = raw.map((p) => p.x);
+    const ys = raw.map((p) => p.y);
+    const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+    return raw.map((p) => [(p.x - x0) / (x1 - x0 || 1), (p.y - y0) / (y1 - y0 || 1)]);
+  })();
+
   // Arcs and matrix share one order, so every node keeps its matrix row/column
   const shuffled = shuffle([...Array(N).keys()]);
   const from = positions(shuffled);
@@ -251,16 +270,19 @@
 
   // Two-sided arcs: layer A on the left (wide) or top (narrow), layer B on the other side.
   // Each side has its own column of dots, a few pixels either side of the axis.
-  function drawArcs(e) {
+  // showB: how visible the protein layer (pale side) is; it arrives with the matrix
+  function drawArcs(e, showB = 1) {
     const m = P.matrix;
     const cell = m.w / N;
     const at = (v) => (wide ? m.y : m.x) + (lerp(from[v], to[v], e) + 0.5) * cell;
     const sides = [
-      { edges: layerA, rgb: INK, alpha: 0.3, off: -4 },
-      { edges: layerB, rgb: INK2, alpha: 0.45, off: 4 },
+      { edges: layerA, rgb: INK, alpha: 0.3, off: -4, show: 1 },
+      { edges: layerB, rgb: INK2, alpha: 0.45, off: 4, show: showB },
     ];
     const dot = Math.min(2.2, cell * 0.38);
-    for (const { edges: list, rgb, alpha, off } of sides) {
+    for (const { edges: list, rgb, alpha, off, show } of sides) {
+      if (show <= 0) continue;
+      ctx.globalAlpha = show;
       const base = P.axis + off;
       const out = Math.sign(off); // -1: left/up, +1: right/down
       ctx.lineWidth = 1;
@@ -270,13 +292,15 @@
         const a = Math.min(at(i), at(j));
         const r = (Math.max(at(i), at(j)) - a) / 2;
         const f = r * P.arcFlat;
+        // A cubic curve close to a half-ellipse from node a to node b, bulging away from the axis
+        // (the same curve the network's links bend into, so the handover is seamless)
+        const c = base + out * (4 / 3) * f;
         if (wide) {
-          // Half-ellipse from node a to node b, bulging left or right of the axis
-          ctx.moveTo(base, out < 0 ? a + 2 * r : a);
-          ctx.ellipse(base, a + r, f, r, 0, out < 0 ? Math.PI / 2 : -Math.PI / 2, out < 0 ? (3 * Math.PI) / 2 : Math.PI / 2);
+          ctx.moveTo(base, a);
+          ctx.bezierCurveTo(c, a, c, a + 2 * r, base, a + 2 * r);
         } else {
-          ctx.moveTo(out < 0 ? a : a + 2 * r, base);
-          ctx.ellipse(a + r, base, r, f, 0, out < 0 ? Math.PI : 0, out < 0 ? 2 * Math.PI : Math.PI);
+          ctx.moveTo(a, base);
+          ctx.bezierCurveTo(a, c, a + 2 * r, c, a + 2 * r, base);
         }
       }
       ctx.stroke();
@@ -285,6 +309,63 @@
         ctx.beginPath();
         if (wide) ctx.arc(base, at(v), dot, 0, 2 * Math.PI);
         else ctx.arc(at(v), base, dot, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // morph 0 → 1: nodes glide from the network onto the arc axis, already grouped by community,
+  // and each DNA link bends into its arc on the way: straight → curved
+  function drawNetwork(morph) {
+    const m = P.matrix;
+    const cell = m.w / N;
+    const r = P.net;
+    const pad = 12;
+    const move = ease(Math.min(1, morph / 0.85));
+    const bend = ease(Math.max(0, (morph - 0.15) / 0.85));
+    const center = (v) => {
+      const nx = r.x + pad + netPos[v][0] * (r.w - 2 * pad);
+      const ny = r.y + pad + netPos[v][1] * (r.h - 2 * pad);
+      const along = (wide ? m.y : m.x) + (to[v] + 0.5) * cell;
+      return wide ? [lerp(nx, P.axis, move), lerp(ny, along, move)] : [lerp(nx, along, move), lerp(ny, P.axis, move)];
+    };
+    const pts = [...Array(N).keys()].map(center);
+    const dot = lerp(3, Math.min(2.2, cell * 0.38), move);
+    // Only the DNA layer: the protein layer arrives later, with the matrix
+    const sides = [{ edges: layerA, rgb: INK, from: 0.22, to: 0.3, off: -4 }];
+    // Nodes slide onto the DNA side of the axis
+    const end = (v, off) => (wide ? [pts[v][0] + off * move, pts[v][1]] : [pts[v][0], pts[v][1] + off * move]);
+    for (const { edges: list, rgb, from: a0, to: a1, off } of sides) {
+      const out = Math.sign(off);
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = `rgba(${rgb},${lerp(a0, a1, bend).toFixed(3)})`;
+      ctx.beginPath();
+      for (const [i, j] of list) {
+        const [px, py] = end(i, off);
+        const [qx, qy] = end(j, off);
+        // Straight link: control points a third of the way along; arc: pushed off the axis
+        const half = Math.abs(wide ? qy - py : qx - px) / 2;
+        const push = out * (4 / 3) * half * P.arcFlat;
+        const s1 = [px + (qx - px) / 3, py + (qy - py) / 3];
+        const s2 = [px + (2 * (qx - px)) / 3, py + (2 * (qy - py)) / 3];
+        const a1c = wide ? [px + push, py] : [px, py + push];
+        const a2c = wide ? [qx + push, qy] : [qx, qy + push];
+        ctx.moveTo(px, py);
+        ctx.bezierCurveTo(
+          lerp(s1[0], a1c[0], bend), lerp(s1[1], a1c[1], bend),
+          lerp(s2[0], a2c[0], bend), lerp(s2[1], a2c[1], bend),
+          qx, qy,
+        );
+      }
+      ctx.stroke();
+    }
+    for (const { rgb, off } of sides) {
+      ctx.fillStyle = `rgb(${rgb})`;
+      for (let v = 0; v < N; v++) {
+        const [x, y] = end(v, off);
+        ctx.beginPath();
+        ctx.arc(x, y, dot, 0, 2 * Math.PI);
         ctx.fill();
       }
     }
@@ -375,7 +456,7 @@
   // helix's C-x-x-x-C, bonded to it by two disulfides, colours in blue as the phrase types.
   const PROTEIN = window.DEFENSIN_1ICA;
   const hex = (rgb) => "#" + rgb.split(",").map((v) => (+v).toString(16).padStart(2, "0")).join("");
-  const PALE = "220, 228, 238";
+  const PALE = "221, 228, 238"; // #dde4ee, the ribbon colour
   const structEl = document.createElement("div");
   structEl.className = "structure";
   stage.insertBefore(structEl, canvas); // under the canvas, so the zoom frames draw on top
@@ -404,9 +485,11 @@
   // reveal 0 → 1: the helix motif goes from the pale cartoon colour to blue
   function styleStructure(reveal) {
     const mix = PALE.split(",").map((v, i) => Math.round(+v + (+INK3.split(",")[i] - +v) * reveal)).join(",");
-    viewer.setStyle({}, { cartoon: { color: "#c3cfdf", thickness: 0.2, arrows: true } });
-    viewer.setStyle({ resi: PROTEIN.site }, { cartoon: { color: hex(INK2) } });
-    viewer.setStyle({ resi: PROTEIN.site2 }, { cartoon: { color: hex(mix) } });
+    // A thin, pale, flat ribbon: strands as arrows, light enough to stay in the background
+    const ribbon = { thickness: 0.2, arrows: true };
+    viewer.setStyle({}, { cartoon: { ...ribbon, color: "#dde4ee" } });
+    viewer.setStyle({ resi: PROTEIN.site }, { cartoon: { ...ribbon, color: hex(INK2) } });
+    viewer.setStyle({ resi: PROTEIN.site2 }, { cartoon: { ...ribbon, color: hex(mix) } });
   }
 
   function drawStructure(alpha, reveal) {
@@ -428,9 +511,9 @@
     "I love seeing how structure shapes function.",
   ];
   document.getElementById("tagline-text").textContent = PHRASES.join(" ");
-  const TYPE_MS = 55;
-  const DELETE_MS = 28;
-  const HOLD_MS = 2200;
+  const TYPE_MS = 75;
+  const DELETE_MS = 35;
+  const HOLD_MS = 3200;
   // Keyframes: type 1 · hold · delete 1 · type 2 · hold · delete 2 · type 3 · hold · delete 3 ·
   // type 4 · hold · delete 4
   const T = [0];
@@ -476,13 +559,17 @@
 
   function draw(t) {
     ctx.clearRect(0, 0, W, H);
-    // Arcs sort (1) and scramble again (2→3); the matrix then fades in unordered
-    // and sorts itself, with the arcs re-sorting in step so rows always match (3→4)
-    const matSort = seg(t, 3, 4, 0.25, 1);
-    const arcSort = t < T[2] ? seg(t, 0, 1) : t < T[3] ? 1 - seg(t, 2, 3) : matSort;
-    drawArcs(arcSort);
-    const matAlpha = seg(t, 3, 4, 0, 0.25);
-    if (matAlpha > 0) drawMatrix(P.matrix, matSort, matAlpha);
+    // The DNA network turns into arcs grouped by community (phrase 1). As the DNA arcs shuffle
+    // (2→3), the matrix and the protein layer fade in, following the arcs' order so rows always
+    // match; then everything sorts together (3→4)
+    const morphFrom = T[0] + 0.5 * (T[1] - T[0]); // the network holds still for the first half
+    const morphTo = T[1] + 0.5 * (T[2] - T[1]);
+    const morph = Math.max(0, Math.min(1, (t - morphFrom) / (morphTo - morphFrom)));
+    const order = t < T[2] ? 1 : t < T[3] ? 1 - seg(t, 2, 3) : seg(t, 3, 4, 0.1, 1);
+    const reveal = t < T[2] ? 0 : seg(t, 2, 3, 0.3, 1);
+    if (morph < 1) drawNetwork(morph);
+    else drawArcs(order, reveal);
+    if (reveal > 0) drawMatrix(P.matrix, order, reveal);
     const zoom = seg(t, 5, 6);
     if (zoom > 0) {
       drawZoom(zoom);
@@ -497,18 +584,46 @@
 
   const typer = document.getElementById("typewriter");
   const cursor = document.querySelector(".cursor");
-  let t0 = null;
+  // The sentence has been deleted: hide the cursor (and, on phones, the pinned strip)
+  const finish = () => {
+    cursor.classList.add("done");
+    document.querySelector(".tagline").classList.add("done");
+  };
+  // When the figures are stacked (phones), the story waits, with the sentence fully typed,
+  // until the next figure has scrolled into view, so the two are always seen together.
+  // Each gate holds at the end of a phrase's pause, just before its figure starts to change.
+  const inView = (r) => stage.getBoundingClientRect().top + r.y < window.innerHeight * 0.7;
+  const GATES = [
+    { at: 2, panel: () => P.matrix }, // arcs scramble, then the matrix appears
+    { at: 5, panel: () => P.seq }, // zoom into the module's sequences
+    { at: 8, panel: () => P.struct }, // zoom into the protein
+  ];
+  const opened = new Set();
+  function gateTime(t) {
+    for (const g of GATES) {
+      if (t > T[g.at] || opened.has(g)) continue;
+      if (wide || inView(g.panel())) opened.add(g);
+      else return T[g.at];
+    }
+    return Infinity;
+  }
+
+  let last = null;
   let now = 0;
   let shown = null;
 
   function frame(ts) {
-    if (t0 === null) t0 = ts;
-    now = Math.min(END, ts - t0);
-    const text = textAt(now);
-    if (text !== shown) typer.textContent = shown = text;
-    draw(now);
+    const dt = last === null ? 0 : Math.min(100, ts - last); // no jump after a hidden tab
+    last = ts;
+    const next = Math.min(END, now + dt, gateTime(now));
+    if (next !== now || shown === null) {
+      now = next;
+      const text = textAt(now);
+      if (text !== shown) typer.textContent = shown = text;
+      draw(now);
+    }
     if (now < END) requestAnimationFrame(frame);
-    else setTimeout(() => cursor.classList.add("done"), 1500); // and then it all stops
+    else setTimeout(finish, 1500); // and then it all stops
   }
 
   layout();
@@ -524,7 +639,7 @@
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     // No typing or motion: show the finished picture
     now = END;
-    cursor.classList.add("done");
+    finish();
     draw(END);
   } else {
     draw(0);

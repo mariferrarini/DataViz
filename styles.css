@@ -85,7 +85,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 17px/1.6 var(--font-body);
+  font: 16px/1.6 var(--font-body);
 }
 h1,
 h2 {
@@ -100,7 +100,7 @@ a {
 main {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 112px 16px 64px;
+  padding: 92px 16px 48px;
 }
 .sr-only {
   position: absolute;
@@ -159,7 +159,7 @@ main {
 .card {
   max-width: 640px;
   margin: 0 auto;
-  padding: 36px 32px 32px;
+  padding: 26px 28px 22px;
   text-align: center;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -169,8 +169,8 @@ main {
     0 2px 6px rgba(27, 47, 78, 0.06);
 }
 .card h1 {
-  font-size: 36px;
-  margin: 0 0 12px;
+  font-size: 32px;
+  margin: 0 0 8px;
 }
 .card p {
   margin: 0 0 4px;
@@ -182,14 +182,14 @@ main {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 .contact-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -216,7 +216,7 @@ main {
 
 /* ---------- Typewriter + animation ---------- */
 .tagline {
-  margin: 40px auto 8px;
+  margin: 24px auto 8px;
   min-height: 3.2em;
   text-align: center;
   color: var(--text-muted);
@@ -292,6 +292,54 @@ main {
   font-family: var(--font-mono);
   font-size: 13px;
   letter-spacing: 0.06em;
+}
+
+/* ---------- Stacked figures (story.js stacks them when the stage is under 880px) ---------- */
+/* The sentence stays pinned under the banner while people scroll down through the figures */
+@media (max-width: 911px) {
+  .tagline {
+    position: sticky;
+    top: 66px; /* the banner's height */
+    z-index: 50;
+    margin: 32px -16px 8px;
+    padding: 10px 16px;
+    min-height: 0;
+    background: rgba(245, 247, 250, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: opacity 0.6s ease;
+  }
+  .tagline.done {
+    opacity: 0;
+  }
+}
+
+/* ---------- Short laptop windows: a more compact top, so the figures fit below it ---------- */
+@media (min-width: 912px) and (max-height: 760px) {
+  main {
+    padding-top: 80px;
+  }
+  .card {
+    padding: 18px 24px 16px;
+  }
+  .card h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .card p {
+    margin: 0;
+  }
+  .contact-icons {
+    margin-top: 10px;
+  }
+  .contact-icons a {
+    width: 36px;
+    height: 36px;
+  }
+  .tagline {
+    margin-top: 14px;
+    min-height: 1.6em;
+  }
 }
 
 /* ---------- Small screens ---------- */

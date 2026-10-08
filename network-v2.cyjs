@@ -1,0 +1,3495 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.10.4",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "story network",
+    "name" : "story network",
+    "SUID" : 128,
+    "__Annotations" : [ ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "327",
+        "shared_name" : "gene 55",
+        "name" : "gene 55",
+        "SUID" : 327,
+        "id_original" : "n55",
+        "community" : 7.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 144.55825302150143,
+        "y" : 295.28650580140555
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "324",
+        "shared_name" : "gene 54",
+        "name" : "gene 54",
+        "SUID" : 324,
+        "id_original" : "n54",
+        "community" : 7.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 100.43505156214668,
+        "y" : 312.5795176345028
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "321",
+        "shared_name" : "gene 53",
+        "name" : "gene 53",
+        "SUID" : 321,
+        "id_original" : "n53",
+        "community" : 7.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 124.93505156214668,
+        "y" : 336.1795176345028
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "318",
+        "shared_name" : "gene 52",
+        "name" : "gene 52",
+        "SUID" : 318,
+        "id_original" : "n52",
+        "community" : 7.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 88.33505156214667,
+        "y" : 283.7795176345027
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "315",
+        "shared_name" : "gene 51",
+        "name" : "gene 51",
+        "SUID" : 315,
+        "id_original" : "n51",
+        "community" : 6.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 622.3178656937636,
+        "y" : 298.8868772089837
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "312",
+        "shared_name" : "gene 50",
+        "name" : "gene 50",
+        "SUID" : 312,
+        "id_original" : "n50",
+        "community" : 6.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 601.3178656937636,
+        "y" : 272.58687720898376
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "309",
+        "shared_name" : "gene 49",
+        "name" : "gene 49",
+        "SUID" : 309,
+        "id_original" : "n49",
+        "community" : 6.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 619.5178656937636,
+        "y" : 255.38687720898375
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "306",
+        "shared_name" : "gene 48",
+        "name" : "gene 48",
+        "SUID" : 306,
+        "id_original" : "n48",
+        "community" : 6.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 536.5178656937636,
+        "y" : 261.6868772089838
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "303",
+        "shared_name" : "gene 47",
+        "name" : "gene 47",
+        "SUID" : 303,
+        "id_original" : "n47",
+        "community" : 6.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 552.9178656937636,
+        "y" : 217.48687720898417
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "300",
+        "shared_name" : "gene 46",
+        "name" : "gene 46",
+        "SUID" : 300,
+        "id_original" : "n46",
+        "community" : 5.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 399.9196442822939,
+        "y" : 117.29644282293923
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "297",
+        "shared_name" : "gene 45",
+        "name" : "gene 45",
+        "SUID" : 297,
+        "id_original" : "n45",
+        "community" : 5.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 425.9503791855648,
+        "y" : 86.63838800564966
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "294",
+        "shared_name" : "gene 44",
+        "name" : "gene 44",
+        "SUID" : 294,
+        "id_original" : "n44",
+        "community" : 5.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 383.16403914257415,
+        "y" : 56.70717044653747
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "291",
+        "shared_name" : "gene 43",
+        "name" : "gene 43",
+        "SUID" : 291,
+        "id_original" : "n43",
+        "community" : 5.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 367.63330423930324,
+        "y" : 85.25546295191131
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "288",
+        "shared_name" : "gene 42",
+        "name" : "gene 42",
+        "SUID" : 288,
+        "id_original" : "n42",
+        "community" : 5.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 410.56403914257413,
+        "y" : 55.26229293041595
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "285",
+        "shared_name" : "gene 41",
+        "name" : "gene 41",
+        "SUID" : 285,
+        "id_original" : "n41",
+        "community" : 4.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 474.6441580764457,
+        "y" : 295.66344262276283
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "282",
+        "shared_name" : "gene 40",
+        "name" : "gene 40",
+        "SUID" : 282,
+        "id_original" : "n40",
+        "community" : 4.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 401.0502140131883,
+        "y" : 349.4426374874903
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "279",
+        "shared_name" : "gene 39",
+        "name" : "gene 39",
+        "SUID" : 279,
+        "id_original" : "n39",
+        "community" : 4.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 479.0589421193733,
+        "y" : 358.4104320765904
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "276",
+        "shared_name" : "gene 38",
+        "name" : "gene 38",
+        "SUID" : 276,
+        "id_original" : "n38",
+        "community" : 4.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 416.7804240081059,
+        "y" : 304.1265347820403
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "273",
+        "shared_name" : "gene 37",
+        "name" : "gene 37",
+        "SUID" : 273,
+        "id_original" : "n37",
+        "community" : 4.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 495.2166550953683,
+        "y" : 327.58492451149533
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "270",
+        "shared_name" : "gene 36",
+        "name" : "gene 36",
+        "SUID" : 270,
+        "id_original" : "n36",
+        "community" : 4.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 432.6133061724658,
+        "y" : 359.7137809994928
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "267",
+        "shared_name" : "gene 35",
+        "name" : "gene 35",
+        "SUID" : 267,
+        "id_original" : "n35",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 182.9,
+        "y" : 263.3
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "264",
+        "shared_name" : "gene 34",
+        "name" : "gene 34",
+        "SUID" : 264,
+        "id_original" : "n34",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 209.0,
+        "y" : 217.3
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "261",
+        "shared_name" : "gene 33",
+        "name" : "gene 33",
+        "SUID" : 261,
+        "id_original" : "n33",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 186.8,
+        "y" : 219.3
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "258",
+        "shared_name" : "gene 32",
+        "name" : "gene 32",
+        "SUID" : 258,
+        "id_original" : "n32",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 251.1,
+        "y" : 195.4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "255",
+        "shared_name" : "gene 31",
+        "name" : "gene 31",
+        "SUID" : 255,
+        "id_original" : "n31",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 309.0,
+        "y" : 208.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "252",
+        "shared_name" : "gene 30",
+        "name" : "gene 30",
+        "SUID" : 252,
+        "id_original" : "n30",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 215.5,
+        "y" : 240.3
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "249",
+        "shared_name" : "gene 29",
+        "name" : "gene 29",
+        "SUID" : 249,
+        "id_original" : "n29",
+        "community" : 3.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 241.2,
+        "y" : 277.3
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "246",
+        "shared_name" : "gene 28",
+        "name" : "gene 28",
+        "SUID" : 246,
+        "id_original" : "n28",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 197.49776851238468,
+        "y" : 333.2150506157963
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "243",
+        "shared_name" : "gene 27",
+        "name" : "gene 27",
+        "SUID" : 243,
+        "id_original" : "n27",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 252.31722014073713,
+        "y" : 383.1821684514364
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "240",
+        "shared_name" : "gene 26",
+        "name" : "gene 26",
+        "SUID" : 240,
+        "id_original" : "n26",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 256.7346763531072,
+        "y" : 352.1405581808914
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "237",
+        "shared_name" : "gene 25",
+        "name" : "gene 25",
+        "SUID" : 237,
+        "id_original" : "n25",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 359.0844496844683,
+        "y" : 302.6017039704053
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "234",
+        "shared_name" : "gene 24",
+        "name" : "gene 24",
+        "SUID" : 234,
+        "id_original" : "n24",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 268.6,
+        "y" : 246.4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "231",
+        "shared_name" : "gene 23",
+        "name" : "gene 23",
+        "SUID" : 231,
+        "id_original" : "n23",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 233.06420959456474,
+        "y" : 330.13585575106885
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "228",
+        "shared_name" : "gene 22",
+        "name" : "gene 22",
+        "SUID" : 228,
+        "id_original" : "n22",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 208.98433797637713,
+        "y" : 374.96538899252636
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "225",
+        "shared_name" : "gene 21",
+        "name" : "gene 21",
+        "SUID" : 225,
+        "id_original" : "n21",
+        "community" : 2.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 276.9,
+        "y" : 260.3
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "222",
+        "shared_name" : "gene 20",
+        "name" : "gene 20",
+        "SUID" : 222,
+        "id_original" : "n20",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 370.098572205895,
+        "y" : 188.1159174789771
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "219",
+        "shared_name" : "gene 19",
+        "name" : "gene 19",
+        "SUID" : 219,
+        "id_original" : "n19",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 438.7,
+        "y" : 200.8
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "216",
+        "shared_name" : "gene 18",
+        "name" : "gene 18",
+        "SUID" : 216,
+        "id_original" : "n18",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 399.5950027206326,
+        "y" : 213.201427794105
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "213",
+        "shared_name" : "gene 17",
+        "name" : "gene 17",
+        "SUID" : 213,
+        "id_original" : "n17",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 455.05060802514123,
+        "y" : 150.51520358192465
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "210",
+        "shared_name" : "gene 16",
+        "name" : "gene 16",
+        "SUID" : 210,
+        "id_original" : "n16",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 421.3738762184657,
+        "y" : 141.961528224751
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "207",
+        "shared_name" : "gene 15",
+        "name" : "gene 15",
+        "SUID" : 207,
+        "id_original" : "n15",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 422.23704398114404,
+        "y" : 183.81877306718707
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "204",
+        "shared_name" : "gene 14",
+        "name" : "gene 14",
+        "SUID" : 204,
+        "id_original" : "n14",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 389.2608143276985,
+        "y" : 158.72969326679674
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "201",
+        "shared_name" : "gene 13",
+        "name" : "gene 13",
+        "SUID" : 201,
+        "id_original" : "n13",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 420.2721763901189,
+        "y" : 251.5147600713741
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "198",
+        "shared_name" : "gene 12",
+        "name" : "gene 12",
+        "SUID" : 198,
+        "id_original" : "n12",
+        "community" : 1.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 448.5,
+        "y" : 180.7
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "195",
+        "shared_name" : "gene 11",
+        "name" : "gene 11",
+        "SUID" : 195,
+        "id_original" : "n11",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 153.5191932116929,
+        "y" : 153.84180259933606
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "192",
+        "shared_name" : "gene 10",
+        "name" : "gene 10",
+        "SUID" : 192,
+        "id_original" : "n10",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 198.80601591052488,
+        "y" : 133.22424499723317
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "189",
+        "shared_name" : "gene 09",
+        "name" : "gene 09",
+        "SUID" : 189,
+        "id_original" : "n9",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 95.58407800748716,
+        "y" : 112.18668011545759
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "186",
+        "shared_name" : "gene 08",
+        "name" : "gene 08",
+        "SUID" : 186,
+        "id_original" : "n8",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 200.40943089977722,
+        "y" : 50.74083728765356
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "183",
+        "shared_name" : "gene 07",
+        "name" : "gene 07",
+        "SUID" : 183,
+        "id_original" : "n7",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 122.83626815795456,
+        "y" : 147.63155763157908
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "180",
+        "shared_name" : "gene 06",
+        "name" : "gene 06",
+        "SUID" : 180,
+        "id_original" : "n6",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 235.0889409642632,
+        "y" : 86.46570752410234
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "177",
+        "shared_name" : "gene 05",
+        "name" : "gene 05",
+        "SUID" : 177,
+        "id_original" : "n5",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 197.69822062033774,
+        "y" : 160.8037550617192
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "174",
+        "shared_name" : "gene 04",
+        "name" : "gene 04",
+        "SUID" : 174,
+        "id_original" : "n4",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 140.1635880719732,
+        "y" : 89.77205484676577
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "171",
+        "shared_name" : "gene 03",
+        "name" : "gene 03",
+        "SUID" : 171,
+        "id_original" : "n3",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 227.84699578155278,
+        "y" : 134.42083000798084
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "168",
+        "shared_name" : "gene 02",
+        "name" : "gene 02",
+        "SUID" : 168,
+        "id_original" : "n2",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 175.04651312571158,
+        "y" : 101.96912251335469
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "165",
+        "shared_name" : "gene 01",
+        "name" : "gene 01",
+        "SUID" : 165,
+        "id_original" : "n1",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 97.3469957815528,
+        "y" : 69.32083000798085
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "156",
+        "shared_name" : "gene 00",
+        "name" : "gene 00",
+        "SUID" : 156,
+        "id_original" : "n0",
+        "community" : 0.0,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 137.67773068482376,
+        "y" : 45.685714803775056
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "777",
+        "source" : "324",
+        "target" : "327",
+        "SUID" : 777,
+        "source_original" : "n54",
+        "id_original" : "D145",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n55"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "774",
+        "source" : "321",
+        "target" : "327",
+        "SUID" : 774,
+        "source_original" : "n53",
+        "id_original" : "D144",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n55"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "771",
+        "source" : "321",
+        "target" : "324",
+        "SUID" : 771,
+        "source_original" : "n53",
+        "id_original" : "D143",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n54"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "768",
+        "source" : "318",
+        "target" : "327",
+        "SUID" : 768,
+        "source_original" : "n52",
+        "id_original" : "D142",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n55"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "765",
+        "source" : "318",
+        "target" : "324",
+        "SUID" : 765,
+        "source_original" : "n52",
+        "id_original" : "D141",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n54"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "762",
+        "source" : "312",
+        "target" : "315",
+        "SUID" : 762,
+        "source_original" : "n50",
+        "id_original" : "D140",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n51"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "948",
+        "source" : "309",
+        "target" : "315",
+        "SUID" : 948,
+        "source_original" : "n49",
+        "id_original" : "p56",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n51"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "759",
+        "source" : "309",
+        "target" : "315",
+        "SUID" : 759,
+        "source_original" : "n49",
+        "id_original" : "D139",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n51"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "756",
+        "source" : "309",
+        "target" : "312",
+        "SUID" : 756,
+        "source_original" : "n49",
+        "id_original" : "D138",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n50"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "945",
+        "source" : "306",
+        "target" : "309",
+        "SUID" : 945,
+        "source_original" : "n48",
+        "id_original" : "p55",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n49"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "753",
+        "source" : "306",
+        "target" : "315",
+        "SUID" : 753,
+        "source_original" : "n48",
+        "id_original" : "D137",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n51"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "750",
+        "source" : "306",
+        "target" : "312",
+        "SUID" : 750,
+        "source_original" : "n48",
+        "id_original" : "D136",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n50"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "747",
+        "source" : "306",
+        "target" : "309",
+        "SUID" : 747,
+        "source_original" : "n48",
+        "id_original" : "D135",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n49"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "942",
+        "source" : "303",
+        "target" : "312",
+        "SUID" : 942,
+        "source_original" : "n47",
+        "id_original" : "p54",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n50"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "744",
+        "source" : "303",
+        "target" : "312",
+        "SUID" : 744,
+        "source_original" : "n47",
+        "id_original" : "D134",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n50"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "741",
+        "source" : "303",
+        "target" : "309",
+        "SUID" : 741,
+        "source_original" : "n47",
+        "id_original" : "D133",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n49"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "738",
+        "source" : "303",
+        "target" : "306",
+        "SUID" : 738,
+        "source_original" : "n47",
+        "id_original" : "D132",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n48"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "735",
+        "source" : "297",
+        "target" : "300",
+        "SUID" : 735,
+        "source_original" : "n45",
+        "id_original" : "D131",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n46"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "939",
+        "source" : "294",
+        "target" : "300",
+        "SUID" : 939,
+        "source_original" : "n44",
+        "id_original" : "p53",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n46"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "936",
+        "source" : "294",
+        "target" : "297",
+        "SUID" : 936,
+        "source_original" : "n44",
+        "id_original" : "p52",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n45"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "732",
+        "source" : "294",
+        "target" : "297",
+        "SUID" : 732,
+        "source_original" : "n44",
+        "id_original" : "D130",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n45"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "729",
+        "source" : "291",
+        "target" : "300",
+        "SUID" : 729,
+        "source_original" : "n43",
+        "id_original" : "D129",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n46"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "726",
+        "source" : "291",
+        "target" : "297",
+        "SUID" : 726,
+        "source_original" : "n43",
+        "id_original" : "D128",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n45"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "723",
+        "source" : "291",
+        "target" : "294",
+        "SUID" : 723,
+        "source_original" : "n43",
+        "id_original" : "D127",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n44"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "933",
+        "source" : "288",
+        "target" : "294",
+        "SUID" : 933,
+        "source_original" : "n42",
+        "id_original" : "p51",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n44"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "720",
+        "source" : "288",
+        "target" : "300",
+        "SUID" : 720,
+        "source_original" : "n42",
+        "id_original" : "D126",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n46"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "717",
+        "source" : "288",
+        "target" : "297",
+        "SUID" : 717,
+        "source_original" : "n42",
+        "id_original" : "D125",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n45"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "714",
+        "source" : "288",
+        "target" : "294",
+        "SUID" : 714,
+        "source_original" : "n42",
+        "id_original" : "D124",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n44"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "711",
+        "source" : "288",
+        "target" : "291",
+        "SUID" : 711,
+        "source_original" : "n42",
+        "id_original" : "D123",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n43"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "708",
+        "source" : "282",
+        "target" : "285",
+        "SUID" : 708,
+        "source_original" : "n40",
+        "id_original" : "D122",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n41"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "930",
+        "source" : "276",
+        "target" : "282",
+        "SUID" : 930,
+        "source_original" : "n38",
+        "id_original" : "p50",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n40"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "705",
+        "source" : "276",
+        "target" : "285",
+        "SUID" : 705,
+        "source_original" : "n38",
+        "id_original" : "D121",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n41"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "702",
+        "source" : "276",
+        "target" : "282",
+        "SUID" : 702,
+        "source_original" : "n38",
+        "id_original" : "D120",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n40"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "699",
+        "source" : "276",
+        "target" : "279",
+        "SUID" : 699,
+        "source_original" : "n38",
+        "id_original" : "D119",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n39"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "927",
+        "source" : "273",
+        "target" : "282",
+        "SUID" : 927,
+        "source_original" : "n37",
+        "id_original" : "p49",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n40"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "924",
+        "source" : "273",
+        "target" : "276",
+        "SUID" : 924,
+        "source_original" : "n37",
+        "id_original" : "p48",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n38"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "696",
+        "source" : "273",
+        "target" : "303",
+        "SUID" : 696,
+        "source_original" : "n37",
+        "id_original" : "D118",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n47"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "693",
+        "source" : "273",
+        "target" : "285",
+        "SUID" : 693,
+        "source_original" : "n37",
+        "id_original" : "D117",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n41"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "690",
+        "source" : "273",
+        "target" : "282",
+        "SUID" : 690,
+        "source_original" : "n37",
+        "id_original" : "D116",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n40"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "687",
+        "source" : "273",
+        "target" : "279",
+        "SUID" : 687,
+        "source_original" : "n37",
+        "id_original" : "D115",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n39"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "921",
+        "source" : "270",
+        "target" : "285",
+        "SUID" : 921,
+        "source_original" : "n36",
+        "id_original" : "p47",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n41"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "918",
+        "source" : "270",
+        "target" : "282",
+        "SUID" : 918,
+        "source_original" : "n36",
+        "id_original" : "p46",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n40"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "684",
+        "source" : "270",
+        "target" : "279",
+        "SUID" : 684,
+        "source_original" : "n36",
+        "id_original" : "D114",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n39"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "681",
+        "source" : "270",
+        "target" : "276",
+        "SUID" : 681,
+        "source_original" : "n36",
+        "id_original" : "D113",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n38"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "678",
+        "source" : "264",
+        "target" : "267",
+        "SUID" : 678,
+        "source_original" : "n34",
+        "id_original" : "D112",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n35"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "675",
+        "source" : "261",
+        "target" : "267",
+        "SUID" : 675,
+        "source_original" : "n33",
+        "id_original" : "D111",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n35"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "915",
+        "source" : "258",
+        "target" : "261",
+        "SUID" : 915,
+        "source_original" : "n32",
+        "id_original" : "p45",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "672",
+        "source" : "258",
+        "target" : "264",
+        "SUID" : 672,
+        "source_original" : "n32",
+        "id_original" : "D110",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n34"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "669",
+        "source" : "258",
+        "target" : "261",
+        "SUID" : 669,
+        "source_original" : "n32",
+        "id_original" : "D109",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "912",
+        "source" : "255",
+        "target" : "258",
+        "SUID" : 912,
+        "source_original" : "n31",
+        "id_original" : "p44",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n32"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "666",
+        "source" : "255",
+        "target" : "300",
+        "SUID" : 666,
+        "source_original" : "n31",
+        "id_original" : "D108",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n46"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "663",
+        "source" : "255",
+        "target" : "276",
+        "SUID" : 663,
+        "source_original" : "n31",
+        "id_original" : "D107",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n38"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "660",
+        "source" : "255",
+        "target" : "264",
+        "SUID" : 660,
+        "source_original" : "n31",
+        "id_original" : "D106",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n34"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "657",
+        "source" : "255",
+        "target" : "258",
+        "SUID" : 657,
+        "source_original" : "n31",
+        "id_original" : "D105",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n32"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "909",
+        "source" : "252",
+        "target" : "255",
+        "SUID" : 909,
+        "source_original" : "n30",
+        "id_original" : "p43",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n31"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "654",
+        "source" : "252",
+        "target" : "267",
+        "SUID" : 654,
+        "source_original" : "n30",
+        "id_original" : "D104",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n35"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "651",
+        "source" : "252",
+        "target" : "264",
+        "SUID" : 651,
+        "source_original" : "n30",
+        "id_original" : "D103",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n34"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "648",
+        "source" : "252",
+        "target" : "261",
+        "SUID" : 648,
+        "source_original" : "n30",
+        "id_original" : "D102",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "645",
+        "source" : "252",
+        "target" : "258",
+        "SUID" : 645,
+        "source_original" : "n30",
+        "id_original" : "D101",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n32"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "906",
+        "source" : "249",
+        "target" : "282",
+        "SUID" : 906,
+        "source_original" : "n29",
+        "id_original" : "p42",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n40"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "903",
+        "source" : "249",
+        "target" : "267",
+        "SUID" : 903,
+        "source_original" : "n29",
+        "id_original" : "p41",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n35"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "900",
+        "source" : "249",
+        "target" : "261",
+        "SUID" : 900,
+        "source_original" : "n29",
+        "id_original" : "p40",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "642",
+        "source" : "249",
+        "target" : "327",
+        "SUID" : 642,
+        "source_original" : "n29",
+        "id_original" : "D100",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n55"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "639",
+        "source" : "249",
+        "target" : "261",
+        "SUID" : 639,
+        "source_original" : "n29",
+        "id_original" : "D99",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "636",
+        "source" : "249",
+        "target" : "255",
+        "SUID" : 636,
+        "source_original" : "n29",
+        "id_original" : "D98",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n31"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "633",
+        "source" : "249",
+        "target" : "252",
+        "SUID" : 633,
+        "source_original" : "n29",
+        "id_original" : "D97",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n30"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "630",
+        "source" : "243",
+        "target" : "246",
+        "SUID" : 630,
+        "source_original" : "n27",
+        "id_original" : "D96",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "897",
+        "source" : "240",
+        "target" : "246",
+        "SUID" : 897,
+        "source_original" : "n26",
+        "id_original" : "p39",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "894",
+        "source" : "240",
+        "target" : "243",
+        "SUID" : 894,
+        "source_original" : "n26",
+        "id_original" : "p38",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n27"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "627",
+        "source" : "240",
+        "target" : "243",
+        "SUID" : 627,
+        "source_original" : "n26",
+        "id_original" : "D95",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n27"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "891",
+        "source" : "237",
+        "target" : "306",
+        "SUID" : 891,
+        "source_original" : "n25",
+        "id_original" : "p37",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n48"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "624",
+        "source" : "237",
+        "target" : "240",
+        "SUID" : 624,
+        "source_original" : "n25",
+        "id_original" : "D94",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n26"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "621",
+        "source" : "234",
+        "target" : "261",
+        "SUID" : 621,
+        "source_original" : "n24",
+        "id_original" : "D93",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "618",
+        "source" : "234",
+        "target" : "246",
+        "SUID" : 618,
+        "source_original" : "n24",
+        "id_original" : "D92",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "888",
+        "source" : "231",
+        "target" : "240",
+        "SUID" : 888,
+        "source_original" : "n23",
+        "id_original" : "p36",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n26"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "885",
+        "source" : "231",
+        "target" : "234",
+        "SUID" : 885,
+        "source_original" : "n23",
+        "id_original" : "p35",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n24"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "615",
+        "source" : "231",
+        "target" : "246",
+        "SUID" : 615,
+        "source_original" : "n23",
+        "id_original" : "D91",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "612",
+        "source" : "231",
+        "target" : "243",
+        "SUID" : 612,
+        "source_original" : "n23",
+        "id_original" : "D90",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n27"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "609",
+        "source" : "231",
+        "target" : "240",
+        "SUID" : 609,
+        "source_original" : "n23",
+        "id_original" : "D89",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n26"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "606",
+        "source" : "231",
+        "target" : "237",
+        "SUID" : 606,
+        "source_original" : "n23",
+        "id_original" : "D88",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n25"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "882",
+        "source" : "228",
+        "target" : "246",
+        "SUID" : 882,
+        "source_original" : "n22",
+        "id_original" : "p34",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "603",
+        "source" : "228",
+        "target" : "246",
+        "SUID" : 603,
+        "source_original" : "n22",
+        "id_original" : "D87",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "600",
+        "source" : "228",
+        "target" : "240",
+        "SUID" : 600,
+        "source_original" : "n22",
+        "id_original" : "D86",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n26"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "597",
+        "source" : "228",
+        "target" : "231",
+        "SUID" : 597,
+        "source_original" : "n22",
+        "id_original" : "D85",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n23"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "879",
+        "source" : "225",
+        "target" : "246",
+        "SUID" : 879,
+        "source_original" : "n21",
+        "id_original" : "p33",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n28"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "876",
+        "source" : "225",
+        "target" : "237",
+        "SUID" : 876,
+        "source_original" : "n21",
+        "id_original" : "p32",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n25"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "594",
+        "source" : "225",
+        "target" : "267",
+        "SUID" : 594,
+        "source_original" : "n21",
+        "id_original" : "D84",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n35"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "591",
+        "source" : "225",
+        "target" : "237",
+        "SUID" : 591,
+        "source_original" : "n21",
+        "id_original" : "D83",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n25"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "588",
+        "source" : "225",
+        "target" : "234",
+        "SUID" : 588,
+        "source_original" : "n21",
+        "id_original" : "D82",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n24"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "585",
+        "source" : "225",
+        "target" : "231",
+        "SUID" : 585,
+        "source_original" : "n21",
+        "id_original" : "D81",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n23"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "582",
+        "source" : "222",
+        "target" : "258",
+        "SUID" : 582,
+        "source_original" : "n20",
+        "id_original" : "D80",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n32"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "579",
+        "source" : "222",
+        "target" : "225",
+        "SUID" : 579,
+        "source_original" : "n20",
+        "id_original" : "D79",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n21"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "576",
+        "source" : "219",
+        "target" : "303",
+        "SUID" : 576,
+        "source_original" : "n19",
+        "id_original" : "D78",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n47"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "573",
+        "source" : "219",
+        "target" : "222",
+        "SUID" : 573,
+        "source_original" : "n19",
+        "id_original" : "D77",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "873",
+        "source" : "216",
+        "target" : "222",
+        "SUID" : 873,
+        "source_original" : "n18",
+        "id_original" : "p31",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "570",
+        "source" : "216",
+        "target" : "249",
+        "SUID" : 570,
+        "source_original" : "n18",
+        "id_original" : "D76",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n29"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "870",
+        "source" : "213",
+        "target" : "219",
+        "SUID" : 870,
+        "source_original" : "n17",
+        "id_original" : "p30",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "567",
+        "source" : "213",
+        "target" : "219",
+        "SUID" : 567,
+        "source_original" : "n17",
+        "id_original" : "D75",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "867",
+        "source" : "210",
+        "target" : "222",
+        "SUID" : 867,
+        "source_original" : "n16",
+        "id_original" : "p29",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "864",
+        "source" : "210",
+        "target" : "213",
+        "SUID" : 864,
+        "source_original" : "n16",
+        "id_original" : "p28",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n17"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "564",
+        "source" : "210",
+        "target" : "300",
+        "SUID" : 564,
+        "source_original" : "n16",
+        "id_original" : "D74",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n46"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "561",
+        "source" : "210",
+        "target" : "222",
+        "SUID" : 561,
+        "source_original" : "n16",
+        "id_original" : "D73",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "558",
+        "source" : "210",
+        "target" : "219",
+        "SUID" : 558,
+        "source_original" : "n16",
+        "id_original" : "D72",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "555",
+        "source" : "210",
+        "target" : "216",
+        "SUID" : 555,
+        "source_original" : "n16",
+        "id_original" : "D71",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n18"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "861",
+        "source" : "207",
+        "target" : "222",
+        "SUID" : 861,
+        "source_original" : "n15",
+        "id_original" : "p27",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "858",
+        "source" : "207",
+        "target" : "210",
+        "SUID" : 858,
+        "source_original" : "n15",
+        "id_original" : "p26",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n16"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "552",
+        "source" : "207",
+        "target" : "234",
+        "SUID" : 552,
+        "source_original" : "n15",
+        "id_original" : "D70",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n24"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "549",
+        "source" : "207",
+        "target" : "222",
+        "SUID" : 549,
+        "source_original" : "n15",
+        "id_original" : "D69",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "546",
+        "source" : "207",
+        "target" : "219",
+        "SUID" : 546,
+        "source_original" : "n15",
+        "id_original" : "D68",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "543",
+        "source" : "207",
+        "target" : "210",
+        "SUID" : 543,
+        "source_original" : "n15",
+        "id_original" : "D67",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n16"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "855",
+        "source" : "204",
+        "target" : "222",
+        "SUID" : 855,
+        "source_original" : "n14",
+        "id_original" : "p25",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "852",
+        "source" : "204",
+        "target" : "210",
+        "SUID" : 852,
+        "source_original" : "n14",
+        "id_original" : "p24",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n16"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "540",
+        "source" : "204",
+        "target" : "222",
+        "SUID" : 540,
+        "source_original" : "n14",
+        "id_original" : "D66",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "537",
+        "source" : "204",
+        "target" : "219",
+        "SUID" : 537,
+        "source_original" : "n14",
+        "id_original" : "D65",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "534",
+        "source" : "204",
+        "target" : "216",
+        "SUID" : 534,
+        "source_original" : "n14",
+        "id_original" : "D64",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n18"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "531",
+        "source" : "204",
+        "target" : "213",
+        "SUID" : 531,
+        "source_original" : "n14",
+        "id_original" : "D63",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n17"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "528",
+        "source" : "204",
+        "target" : "210",
+        "SUID" : 528,
+        "source_original" : "n14",
+        "id_original" : "D62",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n16"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "525",
+        "source" : "204",
+        "target" : "207",
+        "SUID" : 525,
+        "source_original" : "n14",
+        "id_original" : "D61",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n15"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "849",
+        "source" : "201",
+        "target" : "210",
+        "SUID" : 849,
+        "source_original" : "n13",
+        "id_original" : "p23",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n16"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "522",
+        "source" : "201",
+        "target" : "276",
+        "SUID" : 522,
+        "source_original" : "n13",
+        "id_original" : "D60",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n38"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "519",
+        "source" : "201",
+        "target" : "219",
+        "SUID" : 519,
+        "source_original" : "n13",
+        "id_original" : "D59",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "516",
+        "source" : "201",
+        "target" : "216",
+        "SUID" : 516,
+        "source_original" : "n13",
+        "id_original" : "D58",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n18"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "513",
+        "source" : "201",
+        "target" : "207",
+        "SUID" : 513,
+        "source_original" : "n13",
+        "id_original" : "D57",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n15"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "846",
+        "source" : "198",
+        "target" : "216",
+        "SUID" : 846,
+        "source_original" : "n12",
+        "id_original" : "p22",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n18"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "843",
+        "source" : "198",
+        "target" : "204",
+        "SUID" : 843,
+        "source_original" : "n12",
+        "id_original" : "p21",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n14"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "510",
+        "source" : "198",
+        "target" : "222",
+        "SUID" : 510,
+        "source_original" : "n12",
+        "id_original" : "D56",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n20"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "507",
+        "source" : "198",
+        "target" : "219",
+        "SUID" : 507,
+        "source_original" : "n12",
+        "id_original" : "D55",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "504",
+        "source" : "198",
+        "target" : "216",
+        "SUID" : 504,
+        "source_original" : "n12",
+        "id_original" : "D54",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n18"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "501",
+        "source" : "198",
+        "target" : "213",
+        "SUID" : 501,
+        "source_original" : "n12",
+        "id_original" : "D53",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n17"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "498",
+        "source" : "198",
+        "target" : "207",
+        "SUID" : 498,
+        "source_original" : "n12",
+        "id_original" : "D52",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n15"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "495",
+        "source" : "195",
+        "target" : "234",
+        "SUID" : 495,
+        "source_original" : "n11",
+        "id_original" : "D51",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n24"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "840",
+        "source" : "192",
+        "target" : "195",
+        "SUID" : 840,
+        "source_original" : "n10",
+        "id_original" : "p20",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "492",
+        "source" : "192",
+        "target" : "225",
+        "SUID" : 492,
+        "source_original" : "n10",
+        "id_original" : "D50",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n21"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "489",
+        "source" : "192",
+        "target" : "195",
+        "SUID" : 489,
+        "source_original" : "n10",
+        "id_original" : "D49",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "837",
+        "source" : "189",
+        "target" : "195",
+        "SUID" : 837,
+        "source_original" : "n9",
+        "id_original" : "p19",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "486",
+        "source" : "189",
+        "target" : "195",
+        "SUID" : 486,
+        "source_original" : "n9",
+        "id_original" : "D48",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "834",
+        "source" : "186",
+        "target" : "192",
+        "SUID" : 834,
+        "source_original" : "n8",
+        "id_original" : "p18",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "483",
+        "source" : "186",
+        "target" : "192",
+        "SUID" : 483,
+        "source_original" : "n8",
+        "id_original" : "D47",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "480",
+        "source" : "186",
+        "target" : "189",
+        "SUID" : 480,
+        "source_original" : "n8",
+        "id_original" : "D46",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "831",
+        "source" : "183",
+        "target" : "192",
+        "SUID" : 831,
+        "source_original" : "n7",
+        "id_original" : "p17",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "477",
+        "source" : "183",
+        "target" : "261",
+        "SUID" : 477,
+        "source_original" : "n7",
+        "id_original" : "D45",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n33"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "474",
+        "source" : "183",
+        "target" : "195",
+        "SUID" : 474,
+        "source_original" : "n7",
+        "id_original" : "D44",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "471",
+        "source" : "183",
+        "target" : "192",
+        "SUID" : 471,
+        "source_original" : "n7",
+        "id_original" : "D43",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "468",
+        "source" : "183",
+        "target" : "189",
+        "SUID" : 468,
+        "source_original" : "n7",
+        "id_original" : "D42",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "828",
+        "source" : "180",
+        "target" : "189",
+        "SUID" : 828,
+        "source_original" : "n6",
+        "id_original" : "p16",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "825",
+        "source" : "180",
+        "target" : "186",
+        "SUID" : 825,
+        "source_original" : "n6",
+        "id_original" : "p15",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "465",
+        "source" : "180",
+        "target" : "291",
+        "SUID" : 465,
+        "source_original" : "n6",
+        "id_original" : "D41",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n43"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "462",
+        "source" : "180",
+        "target" : "195",
+        "SUID" : 462,
+        "source_original" : "n6",
+        "id_original" : "D40",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "459",
+        "source" : "180",
+        "target" : "192",
+        "SUID" : 459,
+        "source_original" : "n6",
+        "id_original" : "D39",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "456",
+        "source" : "180",
+        "target" : "183",
+        "SUID" : 456,
+        "source_original" : "n6",
+        "id_original" : "D38",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n7"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "822",
+        "source" : "177",
+        "target" : "192",
+        "SUID" : 822,
+        "source_original" : "n5",
+        "id_original" : "p14",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "819",
+        "source" : "177",
+        "target" : "180",
+        "SUID" : 819,
+        "source_original" : "n5",
+        "id_original" : "p13",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "453",
+        "source" : "177",
+        "target" : "237",
+        "SUID" : 453,
+        "source_original" : "n5",
+        "id_original" : "D37",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n25"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "450",
+        "source" : "177",
+        "target" : "219",
+        "SUID" : 450,
+        "source_original" : "n5",
+        "id_original" : "D36",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n19"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "447",
+        "source" : "177",
+        "target" : "195",
+        "SUID" : 447,
+        "source_original" : "n5",
+        "id_original" : "D35",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "444",
+        "source" : "177",
+        "target" : "189",
+        "SUID" : 444,
+        "source_original" : "n5",
+        "id_original" : "D34",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "441",
+        "source" : "177",
+        "target" : "186",
+        "SUID" : 441,
+        "source_original" : "n5",
+        "id_original" : "D33",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "438",
+        "source" : "177",
+        "target" : "183",
+        "SUID" : 438,
+        "source_original" : "n5",
+        "id_original" : "D32",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n7"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "435",
+        "source" : "177",
+        "target" : "180",
+        "SUID" : 435,
+        "source_original" : "n5",
+        "id_original" : "D31",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "816",
+        "source" : "174",
+        "target" : "186",
+        "SUID" : 816,
+        "source_original" : "n4",
+        "id_original" : "p12",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "813",
+        "source" : "174",
+        "target" : "177",
+        "SUID" : 813,
+        "source_original" : "n4",
+        "id_original" : "p11",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n5"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "432",
+        "source" : "174",
+        "target" : "258",
+        "SUID" : 432,
+        "source_original" : "n4",
+        "id_original" : "D30",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n32"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "429",
+        "source" : "174",
+        "target" : "195",
+        "SUID" : 429,
+        "source_original" : "n4",
+        "id_original" : "D29",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "426",
+        "source" : "174",
+        "target" : "192",
+        "SUID" : 426,
+        "source_original" : "n4",
+        "id_original" : "D28",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "423",
+        "source" : "174",
+        "target" : "189",
+        "SUID" : 423,
+        "source_original" : "n4",
+        "id_original" : "D27",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "420",
+        "source" : "174",
+        "target" : "186",
+        "SUID" : 420,
+        "source_original" : "n4",
+        "id_original" : "D26",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "417",
+        "source" : "174",
+        "target" : "183",
+        "SUID" : 417,
+        "source_original" : "n4",
+        "id_original" : "D25",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n7"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "414",
+        "source" : "174",
+        "target" : "180",
+        "SUID" : 414,
+        "source_original" : "n4",
+        "id_original" : "D24",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "411",
+        "source" : "174",
+        "target" : "177",
+        "SUID" : 411,
+        "source_original" : "n4",
+        "id_original" : "D23",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n5"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "810",
+        "source" : "171",
+        "target" : "183",
+        "SUID" : 810,
+        "source_original" : "n3",
+        "id_original" : "p10",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n7"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "807",
+        "source" : "171",
+        "target" : "177",
+        "SUID" : 807,
+        "source_original" : "n3",
+        "id_original" : "p9",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n5"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "804",
+        "source" : "171",
+        "target" : "174",
+        "SUID" : 804,
+        "source_original" : "n3",
+        "id_original" : "p8",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n4"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "408",
+        "source" : "171",
+        "target" : "285",
+        "SUID" : 408,
+        "source_original" : "n3",
+        "id_original" : "D22",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n41"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "405",
+        "source" : "171",
+        "target" : "204",
+        "SUID" : 405,
+        "source_original" : "n3",
+        "id_original" : "D21",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n14"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "402",
+        "source" : "171",
+        "target" : "195",
+        "SUID" : 402,
+        "source_original" : "n3",
+        "id_original" : "D20",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "399",
+        "source" : "171",
+        "target" : "192",
+        "SUID" : 399,
+        "source_original" : "n3",
+        "id_original" : "D19",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "396",
+        "source" : "171",
+        "target" : "186",
+        "SUID" : 396,
+        "source_original" : "n3",
+        "id_original" : "D18",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "393",
+        "source" : "171",
+        "target" : "183",
+        "SUID" : 393,
+        "source_original" : "n3",
+        "id_original" : "D17",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n7"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "390",
+        "source" : "171",
+        "target" : "180",
+        "SUID" : 390,
+        "source_original" : "n3",
+        "id_original" : "D16",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "387",
+        "source" : "171",
+        "target" : "177",
+        "SUID" : 387,
+        "source_original" : "n3",
+        "id_original" : "D15",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n5"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "384",
+        "source" : "171",
+        "target" : "174",
+        "SUID" : 384,
+        "source_original" : "n3",
+        "id_original" : "D14",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n4"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "801",
+        "source" : "168",
+        "target" : "192",
+        "SUID" : 801,
+        "source_original" : "n2",
+        "id_original" : "p7",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "798",
+        "source" : "168",
+        "target" : "177",
+        "SUID" : 798,
+        "source_original" : "n2",
+        "id_original" : "p6",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n5"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "795",
+        "source" : "168",
+        "target" : "171",
+        "SUID" : 795,
+        "source_original" : "n2",
+        "id_original" : "p5",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n3"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "381",
+        "source" : "168",
+        "target" : "195",
+        "SUID" : 381,
+        "source_original" : "n2",
+        "id_original" : "D13",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "378",
+        "source" : "168",
+        "target" : "186",
+        "SUID" : 378,
+        "source_original" : "n2",
+        "id_original" : "D12",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "375",
+        "source" : "168",
+        "target" : "180",
+        "SUID" : 375,
+        "source_original" : "n2",
+        "id_original" : "D11",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "372",
+        "source" : "168",
+        "target" : "177",
+        "SUID" : 372,
+        "source_original" : "n2",
+        "id_original" : "D10",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n5"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "369",
+        "source" : "168",
+        "target" : "174",
+        "SUID" : 369,
+        "source_original" : "n2",
+        "id_original" : "D9",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n4"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "792",
+        "source" : "165",
+        "target" : "189",
+        "SUID" : 792,
+        "source_original" : "n1",
+        "id_original" : "p4",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "366",
+        "source" : "165",
+        "target" : "192",
+        "SUID" : 366,
+        "source_original" : "n1",
+        "id_original" : "D8",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "363",
+        "source" : "165",
+        "target" : "189",
+        "SUID" : 363,
+        "source_original" : "n1",
+        "id_original" : "D7",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "789",
+        "source" : "156",
+        "target" : "186",
+        "SUID" : 789,
+        "source_original" : "n0",
+        "id_original" : "p3",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n8"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "786",
+        "source" : "156",
+        "target" : "180",
+        "SUID" : 786,
+        "source_original" : "n0",
+        "id_original" : "p2",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "783",
+        "source" : "156",
+        "target" : "171",
+        "SUID" : 783,
+        "source_original" : "n0",
+        "id_original" : "p1",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n3"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "780",
+        "source" : "156",
+        "target" : "168",
+        "SUID" : 780,
+        "source_original" : "n0",
+        "id_original" : "p0",
+        "layer" : "protein",
+        "selected" : false,
+        "target_original" : "n2"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "360",
+        "source" : "156",
+        "target" : "195",
+        "SUID" : 360,
+        "source_original" : "n0",
+        "id_original" : "D6",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n11"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "357",
+        "source" : "156",
+        "target" : "189",
+        "SUID" : 357,
+        "source_original" : "n0",
+        "id_original" : "D5",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n9"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "354",
+        "source" : "156",
+        "target" : "183",
+        "SUID" : 354,
+        "source_original" : "n0",
+        "id_original" : "D4",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n7"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "351",
+        "source" : "156",
+        "target" : "180",
+        "SUID" : 351,
+        "source_original" : "n0",
+        "id_original" : "D3",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n6"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "348",
+        "source" : "156",
+        "target" : "171",
+        "SUID" : 348,
+        "source_original" : "n0",
+        "id_original" : "D2",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n3"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "345",
+        "source" : "156",
+        "target" : "168",
+        "SUID" : 345,
+        "source_original" : "n0",
+        "id_original" : "D1",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n2"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "330",
+        "source" : "156",
+        "target" : "165",
+        "SUID" : 330,
+        "source_original" : "n0",
+        "id_original" : "D0",
+        "layer" : "DNA",
+        "selected" : false,
+        "target_original" : "n1"
+      },
+      "selected" : false
+    } ]
+  }
+}
